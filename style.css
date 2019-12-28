@@ -5,6 +5,7 @@ html {
     overflow-x: hidden;
     width: 370px;
     background-color: white;
+
 }
 
 title {
@@ -123,7 +124,15 @@ div {
     color: #09294b;
     display: block;
     list-style: square outside;
+}
 
+.photo_place {
+    color: #09294b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
 
 }
 
