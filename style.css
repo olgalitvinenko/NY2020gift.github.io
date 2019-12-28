@@ -1,11 +1,10 @@
 html {
 
     font-family: "Trebuchet MS", "Lucida Sans";
-    margin: 0;
-}
 
-@media only screen and (max-device-width: 640px) * {
-    -webkit-text-size-adjust: none;
+    font-size: 20px;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 title {
@@ -14,56 +13,52 @@ title {
 }
 
 
+
 body {
+    background-color: white;
     margin: 0;
-    font-size: 50px;
+    font-size: normal;
     font-weight: normal;
-    max-width: 640px;
+    max-width: 375px;
+    overflow-x: hidden;
 }
 
 .picture {
     padding: 0px;
     object-position: top;
-    width: 670px;
-    height: 640px;
-    background-color: transparent;
-}
+    float: left;
+    height: 375px;
+    background-color: white;
 
-.happy_new_year {
-    padding: 0px;
-    object-position: top, center;
-    width: 670px;
-    width: 640px;
-    background-color: transparent;
-    margin-top: -20px;
 }
 
 .where_to_go {
+    display: block;
     text-align: left;
     margin-left: 20px;
     font-weight: bold;
+    font-size: 32px;
 }
 
 .what_to_do {
+    display: block;
     text-align: right;
-    margin-right: 10px;
+    margin-right: 20px;
     font-weight: bold;
+    font-size: 30px;
+    margin-bottom: -10px;
 }
 
-.plane{
-    width: 40px;
-    height: 40px;
 
-}
+
 div {
     background: #eeeee5;
-    background-color: transparent;
-    max-width: 640px;
+    background-color: white;
 }
 
 
 .rounded {
-    margin: 20px;
+    margin-right: 20px;
     counter-reset: li;
     object-position: center;
     list-style: none;
@@ -84,6 +79,7 @@ div {
 }
 
 }
+
 .where {
     float: left;
 }
@@ -121,29 +117,85 @@ div {
     transition: all .3s ease-out;
 }
 
+.schedule {
+    margin-top: 15em;
+    color: #09294b;
+    display: block;
+    object-position: center;
+    list-style: square outside;
+    background: #eeeee5;
+    background-color: white;
+}
+
+dl {
+    font-size: 0.7em;
+    line-height: 80%;
+}
+
+dl:before {
+    content: "«"
+}
+
+dl:after {
+    content: "»"
+}
+
+.map {
+    width: 150px;
+    height: auto;
+}
 
 footer {
-    font-size: 14px;
+    margin-top: 15em;
     text-align: center;
-    background-color: transparent;
+    background-color: white;
 }
 
 
 .santa_gif {
+
+    display: block;
     padding-left: 0px;
     padding-right: 0px;
     align-items: center;
+    height: 300px;
 }
 
 .Unsubscribe {
-    background-color: transparent;
-    margin-left: 30px;
-    margin-right: 30px;
+    display: block;
+    background-color: white;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
 
 }
 
 .final_greetings {
+    display: block;
     margin-top: 10px;
     font-size: 10px;
     color: dimgrey;
 }
+
+
+
+@media only screen and (max-device-width: 375px) {
+    .picture:
+        height: 375px;
+
+}
+
+
+@media (orientation: landscape) {
+    body {
+        flex-direction: row;
+
+        * {
+            display: block;
+            position: absolute;
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (orientation: portrait) {}
