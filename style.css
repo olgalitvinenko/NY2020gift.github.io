@@ -189,7 +189,7 @@ footer {
 }
 
 
-/*
+
 @media only screen and (max-device-width: 375px) {
     .picture:
         height: 370px;
@@ -210,4 +210,4 @@ footer {
 }
 
 @media (orientation: portrait) {}
-*/
+
