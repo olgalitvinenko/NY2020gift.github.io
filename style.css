@@ -28,6 +28,7 @@ body {
     object-position: top;
     float: left;
     height: 375px;
+    width: 100%;
     background-color: white;
 
 }
