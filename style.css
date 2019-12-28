@@ -2,8 +2,8 @@ html {
 
     font-family: "Trebuchet MS", "Lucida Sans";
     font-size: 20px;
-    width: 100%;
     overflow-x: hidden;
+    width: 370px;
     background-color: white;
 }
 
@@ -19,7 +19,7 @@ body {
     margin: 0;
     font-size: normal;
     font-weight: normal;
-    max-width: 375px;
+    max-width: 370px;
     overflow-x: hidden;
 }
 
@@ -27,7 +27,7 @@ body {
     padding: 0px;
     object-position: top;
     float: left;
-    height: 375px;
+    height: 370px;
     width: 100%;
     background-color: white;
 
@@ -38,7 +38,7 @@ body {
     text-align: left;
     margin-left: 20px;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 25px;
 }
 
 .what_to_do {
@@ -46,7 +46,7 @@ body {
     text-align: right;
     margin-right: 20px;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: -10px;
 }
 
@@ -119,13 +119,12 @@ div {
 }
 
 .schedule {
-    margin-top: 15em;
+    margin-top: 10em;
     color: #09294b;
     display: block;
-    object-position: center;
     list-style: square outside;
-    background: #eeeee5;
-    background-color: white;
+
+
 }
 
 dl {
@@ -146,8 +145,10 @@ dl:after {
     height: auto;
 }
 
+
 footer {
-    margin-top: 15em;
+    display: block;
+    margin-top: 0px;
     text-align: center;
     background-color: white;
 }
@@ -159,7 +160,7 @@ footer {
     padding-left: 0px;
     padding-right: 0px;
     align-items: center;
-    height: 300px;
+    width: 370px;
 }
 
 .Unsubscribe {
@@ -182,7 +183,7 @@ footer {
 
 @media only screen and (max-device-width: 375px) {
     .picture:
-        height: 375px;
+        height: 370px;
 
 }
 
